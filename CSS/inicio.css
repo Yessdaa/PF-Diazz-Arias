@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=IBM+Plex+Sans:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@100&family=Raleway:ital,wght@1,900&family=Secular+One&family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@100&family=Raleway:ital,wght@1,900&family=Secular+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: IBM Plex Sans;
+}
+
+.logo {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo ul {
+    display: flex;
+    padding: 0;
+    width: 800%;
+    animation: slider 60s infinite ease-in-out;
+}
+
+.logo li {
+    width: 100%;
+    list-style: none;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 85px;
+
+}
+
+@keyframes slider {
+    0% {
+        margin-left: 0%;
+    }
+
+    2.5% {
+        margin-left: 0%;
+    }
+
+    12.5% {
+        margin-left: -100%;
+    }
+
+    25% {
+        margin-left: -200%;
+    }
+
+    37.5% {
+        margin-left: -300%;
+    }
+
+    50% {
+        margin-left: -400%;
+    }
+
+    62.7% {
+        margin-left: -500%;
+    }
+
+    75% {
+        margin-left: -600%;
+    }
+
+    87.5% {
+        margin-left: -700%;
+    }
+
+
+
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, lightblue, transparent);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 20px;
+    font-family: Work Sans;
+
+}
+
+.encabezado {
+    display: flex;
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+
+}
+
+label Temas{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    padding: 0 400px;
+    line-height: 80px;
+
+}
+
+.menu {
+    margin-right: 425px;
+    margin-top: 15px;
+    align-items: center;
+    font-size: 22px;
+    list-style-type: none;
+
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: rgb(193, 209, 224);
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+
+}
+
+.submenu {
+    font-family: Montserrat;
+    font-size: 15px;
+    position: absolute;
+    background: white;
+    width: 130%;
+    visibility: hidden;
+    opacity: 0;
+    transition:opacity 0.5s;
+    
+   
+}
+
+.submenu li a {
+    display: block;
+    padding: 1.5px;
+    color: rgb(78, 141, 180);
+    text-decoration: none;
+    box-shadow: 5px 5px rgb(226, 241, 248);
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    align-items: center;
+}
+
+
+ul a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+
+
+}
+
+li {
+    display: flex;
+    padding: 5px;
+    margin: 3px;
+}
+
+h1 {
+    font-family: Bree Serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.tex1 {
+    font-size: 18px;
+    margin: 80px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.imagenes {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    height: 420px;
+
+}
+
+footer {
+    background-image: linear-gradient(to top, lightblue, transparent);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;}
+
+footer a:hover {
+        transform: scale(1.2);
+      }
+
+
+.nombre{
+    margin-right: 580px;
+    margin-top: 15px;
+    align-items: center;
+    font-size: 22px;
+    list-style-type: none;
+    transition: all .4s ease-in-out;
+
+}
+
+ubicaciones h2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 20px
+
+}
+
+
+/*Vista Mobile*/
+@media (max-width: 768px ){
+    .menu{ align-items: center; justify-content: center; display: flex; overflow-x: hidden;}
+    .menu>li>a{ padding: 9px;}
+    .encabezado{display: none;}
+    .menu{ font-size: 15px;}
+    .tex1{margin: 40px;}
+    .nombre{margin-left: 135px;}
+    .imagenes{ width: 100%; height: auto;}
+
+
+}
